@@ -11,7 +11,7 @@ public class Client implements Serializable {
     private static final long serialVersionUID = 7526472295622776147L;
 
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String lastName;

@@ -1,0 +1,2 @@
+INSERT INTO clients (name, last_name, email, created) values ('Martin', 'Grellet', 'mail@mail.com', '2019-05-05');
+INSERT INTO clients (name, last_name, email, created) values ('spring', 'udemy', 'udemy@mail.com', '2019-01-01');
