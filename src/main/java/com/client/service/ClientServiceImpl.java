@@ -19,4 +19,22 @@ public class ClientServiceImpl implements ClientService {
     public List<Client> findAll() {
         return clientRepository.findAll();
     }
+
+    @Override
+    @Transactional(readOnly = true)
+    public Client findById(Long id) {
+        return clientRepository.findById(id).orElse(null);
+    }
+
+    @Override
+    @Transactional
+    public Client save(Client client) {
+        return clientRepository.save(client);
+    }
+
+    @Override
+    @Transactional
+    public void delete(Long id) {
+        clientRepository.deleteById(id);
+    }
 }
